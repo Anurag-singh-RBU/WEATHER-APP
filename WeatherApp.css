@@ -1,0 +1,89 @@
+body{
+
+    margin : 0;
+    padding : 0;
+    background-image : url("BgImg.jpg");
+    background-repeat : no-repeat;
+    background-size : cover;
+
+}
+
+#title{
+
+    text-align : center;
+    font-family : system-ui;
+
+}
+
+#hero{
+
+    height : 550px;
+    width : 450px;
+    margin-left : 532px;
+    margin-top : 50px;
+    display : flex; 
+    flex-direction : column;
+    gap : 10px;
+    border-radius : 20px;
+    background : linear-gradient(135deg , rgba(255 , 255 , 255 , 0.1) , rgba(255 , 255 , 255 , 0));
+    backdrop-filter : blur(10px);
+    -webkit-backdrop-filter : blur(10px);
+    border : 1px solid rgba(255 , 255 , 255 , 0.18);
+    box-shadow : 0px 8px 32px 0 rgba(0 , 0 , 0 , 0.37);
+
+}
+
+input{
+
+    outline : 0;
+    margin : 20px;
+    height : 35px;
+    border-radius : 5px;
+    border : 0;
+    color : black;
+    background-color : rgb(241,243,246);
+
+}
+
+.result{
+
+    color : rgba(0 , 0 , 0 , 0.7);
+    height : 50px;
+    width : 90%;
+    text-align : center;
+    line-height : 50px;
+    border-radius : 20px;
+    background-color : rgba(255 , 255 , 255 , 0.5);
+    font-family: cursive;
+    font-weight : bold;
+
+}
+
+#result{
+
+    color : black;
+    height : 500px;
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    justify-content : space-around;
+    align-items : center;
+
+}
+
+button{
+
+    height : 35px;
+    margin : 0px 20px 20px 20px;
+    border-radius : 20px;
+    border : 0;
+    text-align : center;
+    line-height : 35px;
+    background : rgb(18,67,61);
+    box-shadow : 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color : white;
+    font-family : sans-serif;
+    font-size: 15px;
+    font-weight : bold;
+
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel = "stylesheet" href = "WeatherApp.css">
+</head>
+<body>
+    <header>
+    <h1 id = "title" style = "font-family : Copperplate, Papyrus, fantasy">WEATHER &nbsp;&nbsp; APP</h1>
+    </header>
+
+    <main>
+    <div id = hero>
+    <input type = "text" placeholder = " Enter Your City" id = "city">
+    <button onclick = "fetchData()">Submit</button>
+    
+    <div id = result>
+        <span class = "result" id = "realTime">Date and Time</span>
+        <span class = "result" id = "celcius">Temperature</span>
+        <span class = "result" id = "RH">Humidity</span>
+        <span class = "result" id = "hawa">Wind</span>
+        <span class = "result" id = "prep">Precipitation</span>
+        <span class = "result" id = "aqi">AQI</span>
+    </div>
+</div>
+</main>
+
+</body>
+</html>
+
+<script src="./App.js"></script>
