@@ -1,89 +1,139 @@
-body{
-
-    margin : 0;
-    padding : 0;
-    background-image : url("BgImg.jpg");
-    background-repeat : no-repeat;
-    background-size : cover;
-
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("BgImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#title{
-
-    text-align : center;
-    font-family : system-ui;
-
+#title {
+    text-align: center;
+    font-family: system-ui;
 }
 
-#hero{
+#hero {
+    height: 550px;
+    width: 450px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.37);
 
-    height : 550px;
-    width : 450px;
-    margin-left : 532px;
-    margin-top : 50px;
-    display : flex; 
-    flex-direction : column;
-    gap : 10px;
-    border-radius : 20px;
-    background : linear-gradient(135deg , rgba(255 , 255 , 255 , 0.1) , rgba(255 , 255 , 255 , 0));
-    backdrop-filter : blur(10px);
-    -webkit-backdrop-filter : blur(10px);
-    border : 1px solid rgba(255 , 255 , 255 , 0.18);
-    box-shadow : 0px 8px 32px 0 rgba(0 , 0 , 0 , 0.37);
-
+    /* Centering the hero div */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-input{
-
-    outline : 0;
-    margin : 20px;
-    height : 35px;
-    border-radius : 5px;
-    border : 0;
-    color : black;
-    background-color : rgb(241,243,246);
-
+input {
+    outline: 0;
+    margin: 20px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    color: black;
+    background-color: rgb(241, 243, 246);
+    width: 90%;
+    max-width: 400px;
 }
 
-.result{
-
-    color : rgba(0 , 0 , 0 , 0.7);
-    height : 50px;
-    width : 90%;
-    text-align : center;
-    line-height : 50px;
-    border-radius : 20px;
-    background-color : rgba(255 , 255 , 255 , 0.5);
+.result {
+    color: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 90%;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
     font-family: cursive;
-    font-weight : bold;
-
+    font-weight: bold;
 }
 
-#result{
-
-    color : black;
-    height : 500px;
-    width : 100%;
-    display : flex;
-    flex-direction : column;
-    justify-content : space-around;
-    align-items : center;
-
+#result {
+    color: black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-button{
-
-    height : 35px;
-    margin : 0px 20px 20px 20px;
-    border-radius : 20px;
-    border : 0;
-    text-align : center;
-    line-height : 35px;
-    background : rgb(18,67,61);
-    box-shadow : 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    color : white;
-    font-family : sans-serif;
+button {
+    height: 35px;
+    margin: 0px 20px 20px 20px;
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+    line-height: 35px;
+    background: rgb(18, 67, 61);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: sans-serif;
     font-size: 15px;
-    font-weight : bold;
+    font-weight: bold;
+    width: 90%;
+    max-width: 400px;
+}
 
+@media (max-width: 768px) {
+
+    #hero {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    input {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
+
+    .result {
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    button {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    #title {
+        font-size: 24px;
+    }
+
+    #hero {
+        width: 95%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    input {
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .result {
+        font-size: 12px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    button {
+        font-size: 14px;
+        height: 30px;
+    }
 }
