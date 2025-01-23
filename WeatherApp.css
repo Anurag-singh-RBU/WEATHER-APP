@@ -9,6 +9,7 @@ body {
 #title {
     text-align: center;
     font-family: system-ui;
+    font-size: 32px;
 }
 
 #hero {
@@ -24,10 +25,6 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.37);
-
-    /* Centering the hero div */
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -83,13 +80,15 @@ button {
     max-width: 400px;
 }
 
+/* Mobile view responsiveness */
 @media (max-width: 768px) {
-
     #hero {
         width: 90%;
         height: auto;
         margin: 20px auto;
         padding: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     input {
@@ -99,22 +98,18 @@ button {
 
     .result {
         font-size: 14px;
-        height: 40px;
-        line-height: 40px;
     }
 
     button {
         width: calc(100% - 40px);
-        margin: 10px 20px;
+    }
+
+    #title {
+        font-size: 28px;
     }
 }
 
 @media (max-width: 480px) {
-    
-    #title {
-        font-size: 24px;
-    }
-
     #hero {
         width: 95%;
         padding: 15px;
@@ -128,8 +123,6 @@ button {
 
     .result {
         font-size: 12px;
-        height: 35px;
-        line-height: 35px;
     }
 
     button {
@@ -137,3 +130,25 @@ button {
         height: 30px;
     }
 }
+
+@media (max-width: 360px) {
+    #title {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 12px;
+        height: 28px;
+    }
+
+    .result {
+        font-size: 10px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 12px;
+        height: 28px;
+    }
+}
+
