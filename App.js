@@ -1,6 +1,6 @@
 const City = document.querySelector('input');
 
-const Key = 'fd48517c7fba433b8d109d7e38af421c';
+const Key = 'c7d0fa15a01e4e1c99b1aec27955c811';
 
 const DnT = document.getElementById('realTime');
 const temp = document.getElementById('celcius');
